@@ -1,0 +1,109 @@
+<form class="needs-validation" novalidate>
+
+    <div class="col-md-6 mb-3">
+        <button class="btn btn-primary btn-lg" type="submit">Guardar</button>
+    </div>
+
+    <div class="row">  
+        <div class="col-md-6 mb-3">
+            <label for="code">Código</label>
+            <input type="text" class="form-control" id="code" placeholder="Autogenerado" value="" required>
+            <div class="invalid-feedback">
+                Se requiere colocar un valor del código del gasto.
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="description">Descripción del Gasto</label>
+            <input type="text" class="form-control" id="description" placeholder="Nombre del gasto" value="" required>
+            <div class="invalid-feedback">
+                Se requiere colocar una descripción para el gasto.
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="mount">Monto</label>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">$</span>
+            </div>
+            <input type="text" class="form-control" id="mount" placeholder="Valor del gasto" required>
+            <div class="invalid-feedback" style="width: 100%;">
+                Se requiere colocar un valor del gasto.
+            </div>
+        </div>
+    </div>
+
+    <hr class="mb-4">
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="state-code" checked>
+        <label class="custom-control-label" for="state-code">Estado del gasto</label>
+    </div>
+
+</form>
+
+<hr class="mb-4">
+
+<form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="text" placeholder="Ingresar código" aria-label="Buscar">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+</form>
+
+<hr class="mb-4">
+
+<h5>Listado de gastos</h5>
+<div class="table-responsive">
+    <table class="table table-sm table-hover">
+        <thead>
+        <tr>
+            <th>#ID</th>
+            <th>Código</th>
+            <th>Descripción</th>
+            <th>Monto</th>
+            <th>Estado</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>01</td>
+            <td>Lorem</td>
+            <td>ipsum</td>
+            <td>1,001</td>
+            <td style="text-align:center"><input type="radio"/></td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>amet</td>
+            <td>consectetur</td>
+            <td>1,002</td>
+            <td style="text-align:center"><input type="radio"/></td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td>libero</td>
+            <td>Sed</td>
+            <td>1,003</td>
+            <td style="text-align:center"><input type="radio"/></td>
+        </tr>
+        <tr>
+            <td>04</td>
+            <td>dapibus</td>
+            <td>diam</td>
+            <td>1,004</td>
+            <td style="text-align:center"><input type="radio"/></td>
+        </tr>
+        <tr>
+            <td>05</td>
+            <td>Nulla</td>
+            <td>quis</td>
+            <td>1,005</td>
+            <td style="text-align:center"><input type="radio"/></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+
+

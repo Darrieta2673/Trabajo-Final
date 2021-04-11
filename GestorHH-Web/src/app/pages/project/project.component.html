@@ -1,0 +1,104 @@
+<form class="needs-validation" novalidate>
+
+    <div class="col-md-6 mb-3">
+        <button class="btn btn-primary btn-lg" type="submit">Guardar</button>
+    </div>
+
+    <div class="row">  
+        <div class="col-md-6 mb-3">
+            <label for="codepro">Código</label>
+            <input type="text" class="form-control" id="codepro" placeholder="Autogenerado" value="" required>
+            <div class="invalid-feedback">
+                Se requiere colocar un valor del código del proyecto.
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="proje">Nombre del Proyecto</label>
+            <input type="text" class="form-control" id="proje" placeholder="Nombre del Proyecto" value="" required>
+            <div class="invalid-feedback">
+                Se requiere colocar el nombre del proyecto.
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="cost center">Centro de Costo</label>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">@</span>
+            </div>
+            <input type="text" class="form-control" id="cost center" placeholder="Centro de Costo" required>
+            <div class="invalid-feedback" style="width: 100%;">
+                Se requiere colocar un centro de costo.
+            </div>
+        </div>
+    </div>
+
+    <hr class="mb-4">
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="state-proje" checked>
+        <label class="custom-control-label" for="state-proje">Estado del Proyecto</label>
+    </div>
+
+</form>
+
+<hr class="mb-4">
+
+<form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="text" placeholder="Ingresar el Nombre del Proyecto" aria-label="Buscar">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+</form>
+
+<hr class="mb-4">
+
+<h5>Listado de clientes</h5>
+<div class="table-responsive">
+    <table class="table table-sm table-hover">
+        <thead>
+        <tr>
+            <th>#ID</th>
+            <th>Codigo</th>
+            <th>Nombre del Proyecto</th>
+            <th>Centro de Costo</th>
+            <th>Estado</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>01</td>
+            <td>P452186</td>
+            <td>abdcd</td>
+            <td>45287</td>
+            <td style="text-align:center"><input type="radio"/></td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>P975824</td>
+            <td>iisdi</td>
+            <td>45782</td>
+            <td style="text-align:center"><input type="radio"/></td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td>P42252</td>
+            <td>Creacion</td>
+            <td>57852</td>
+            <td style="text-align:center"><input type="radio"/></td>
+        </tr>
+        <tr>
+            <td>04</td>
+            <td>P25863</td>
+            <td>Modif</td>
+            <td>35752</td>
+            <td style="text-align:center"><input type="radio"/></td>
+        </tr>
+        <tr>
+            <td>05</td>
+            <td>P63635</td>
+            <td>Activar</td>
+            <td>57896</td>
+            <td style="text-align:center"><input type="radio"/></td>
+        </tr>
+        </tbody>
+    </table>
+</div>

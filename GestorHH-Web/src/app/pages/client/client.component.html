@@ -1,0 +1,104 @@
+<form class="needs-validation" novalidate>
+
+    <div class="col-md-6 mb-3">
+        <button class="btn btn-primary btn-lg" type="submit">Guardar</button>
+    </div>
+
+    <div class="row">  
+        <div class="col-md-6 mb-3">
+            <label for="ruc">Nro RUC</label>
+            <input type="text" class="form-control" id="ruc" placeholder="Código RUC" value="" required>
+            <div class="invalid-feedback">
+                Se requiere colocar un valor del registro único de contribuyente (RUC).
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="client">Nombre del cliente</label>
+            <input type="text" class="form-control" id="client" placeholder="Nombre del cliente" value="" required>
+            <div class="invalid-feedback">
+                Se requiere colocar el nombre del cliente.
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="activity">Actividad</label>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">@</span>
+            </div>
+            <input type="text" class="form-control" id="activity" placeholder="Descripción de actividad" required>
+            <div class="invalid-feedback" style="width: 100%;">
+                Se requiere colocar una descripción de la actividad.
+            </div>
+        </div>
+    </div>
+
+    <hr class="mb-4">
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="state-client" checked>
+        <label class="custom-control-label" for="state-client">Estado del cliente</label>
+    </div>
+
+</form>
+
+<hr class="mb-4">
+
+<form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="text" placeholder="Ingresar RUC" aria-label="Buscar">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+</form>
+
+<hr class="mb-4">
+
+<h5>Listado de clientes</h5>
+<div class="table-responsive">
+    <table class="table table-sm table-hover">
+        <thead>
+        <tr>
+            <th>#ID</th>
+            <th>RUC</th>
+            <th>Descripción</th>
+            <th>Actividad</th>
+            <th>Estado</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>01</td>
+            <td>Lorem</td>
+            <td>ipsum</td>
+            <td>1,001</td>
+            <td style="text-align:center"><input type="radio"/></td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>amet</td>
+            <td>consectetur</td>
+            <td>1,002</td>
+            <td style="text-align:center"><input type="radio"/></td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td>libero</td>
+            <td>Sed</td>
+            <td>1,003</td>
+            <td style="text-align:center"><input type="radio"/></td>
+        </tr>
+        <tr>
+            <td>04</td>
+            <td>dapibus</td>
+            <td>diam</td>
+            <td>1,004</td>
+            <td style="text-align:center"><input type="radio"/></td>
+        </tr>
+        <tr>
+            <td>05</td>
+            <td>Nulla</td>
+            <td>quis</td>
+            <td>1,005</td>
+            <td style="text-align:center"><input type="radio"/></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
